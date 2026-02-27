@@ -22,10 +22,10 @@ g h i
 import sys
 
 # 未知行数，元素为str
-matrix = [line.strip().split() for line in sys.stdin if line.strip()]
+matrix = [line.split() for line in sys.stdin if line]
 
 # 未知行数，元素为int
-# matrix = [list(map(int, line.split())) for line in sys.stdin if line.strip()]
+# matrix = [list(map(int, line)) for line in sys.stdin if line]
 
 # 若已知行数（最简单）
 # n = int(input())
