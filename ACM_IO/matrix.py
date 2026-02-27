@@ -19,16 +19,14 @@ g h i
 
 """
 
-import sys
-
 # 未知行数，元素为str
-matrix = [line.split() for line in sys.stdin if line]
+# matrix = [line.split() for line in sys.stdin if line]
 
 # 未知行数，元素为int
 # matrix = [list(map(int, line)) for line in sys.stdin if line]
 
 # 若已知行数（最简单）
-# n = int(input())
-# matrix = [input().split() for _ in range(n)]
+n = int(input())
+matrix = [input().split() for _ in range(n)]
 
 print(f"matrix: {matrix}\nlen: {len(matrix)}\n")
